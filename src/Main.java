@@ -1,8 +1,7 @@
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Marshaller;
-import javax.xml.bind.Unmarshaller;
+import javax.xml.bind.*;
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.InputStreamReader;
 import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
@@ -16,8 +15,8 @@ public class Main {
         addManager("John", "Jonson", "119", 1990, "department");
 
         addWorker("Sophia", "Sofonova", "89099099999", 1923, "Alex");
-        addWorker("Ivan","Ivanov","777", 1993, "John");
-
+        addWorker("Ivan", "Ivanov", "777", 1993, "John");
+/*
         getWorkerByName("Ivan");
         getWorkerByLastname("Ivanov");
         getWorkerByPhone("777");
@@ -28,7 +27,43 @@ public class Main {
 
         getWorkerByName("Sophia");
         sortByBirth();
+ */
+        //Console User Interface
+        System.out.println("Would you like to add new user?");
+        System.out.println("Input: 1 = Yes or 2 = No");
+
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String n=reader.readLine();
+        if (n.equals("1") || n.equals("2")){
+switch(n){
+    case "1" :
+        System.out.println("Will this User be Manager or Worker?"+ '\n'+"1.Manager" +'\n'+"2.Worker");
+            String n2 = reader.readLine();
+            if (n2.equals("1")|| n2.equals("2")){
+                switch(n2){
+                    case "1" :
+                        System.out.println("Manager has been added");
+                        break;
+                    case "2" :
+                        System.out.println("Worker has been added");
+                }
+
+
+            } else { System.out.println("Error Input. Try again"); }
+
+
+        break;
+
+        case "2" :
+        System.out.println("What would you like to do: ??? "); }
+
+        } else { System.out.println("Error Input. Try again"); }
+
+
+
     }
+
+
 
     public static void createXmlNote() throws JAXBException {
 

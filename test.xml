@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<staff>
+    <manager name="Alex">
+        <department>department</department>
+        <lastname>Alexandrov</lastname>
+        <phone>911</phone>
+        <year>1999</year>
+    </manager>
+    <manager name="John">
+        <department>department</department>
+        <lastname>Jonson</lastname>
+        <phone>119</phone>
+        <year>1990</year>
+    </manager>
+    <worker name="Sophia">
+        <lastname>Sofonova</lastname>
+        <manager>Alex</manager>
+        <phone>89099099999</phone>
+        <year>1923</year>
+    </worker>
+    <worker name="Ivan">
+        <lastname>Ivanov</lastname>
+        <manager>John</manager>
+        <phone>777</phone>
+        <year>1993</year>
+    </worker>
+</staff>
