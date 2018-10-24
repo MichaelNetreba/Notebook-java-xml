@@ -42,9 +42,14 @@ switch(n){
             if (n2.equals("1")|| n2.equals("2")){
                 switch(n2){
                     case "1" :
+                        System.out.println("Input first_name,last_name, phone, year(number), department");
+                        addManager(reader.readLine(),reader.readLine(),reader.readLine(),Integer.parseInt(reader.readLine()), reader.readLine());
+
                         System.out.println("Manager has been added");
                         break;
                     case "2" :
+                        System.out.println("Input first_name,last_name, phone, year(number), name of Manager");
+                        addWorker(reader.readLine(),reader.readLine(),reader.readLine(),Integer.parseInt(reader.readLine()),reader.readLine());
                         System.out.println("Worker has been added");
                 }
 

@@ -24,4 +24,10 @@
         <phone>777</phone>
         <year>1993</year>
     </worker>
+    <worker name="Sam">
+        <lastname>Snow</lastname>
+        <manager>Alex</manager>
+        <phone>9178765</phone>
+        <year>1999</year>
+    </worker>
 </staff>
